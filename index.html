@@ -8,16 +8,18 @@
   </head>
   <body>
 
-    <h1>Animation et Transformation</h1>
+    <h1>I. Animation</h1>
 
     
 
     <div class="slide">
-        <h2>Animation Simple</h2>
-        <p class="description">on uttilise la variable "animate" pour choisir son temps, 
+      <div class="description">
+        <h2>p {animation}</h2>
+        <p>on uttilise la variable "animate" pour choisir son temps, 
             sa duration et d'autre détails sur la progression de la séquence.
             mais ça ne configure pas l'apparence de l'animation (on le fait avec @keyframes)
         </p>
+      </div>
 
         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gbYoPzY" data-pen-title="Untitled" data-user="miewlk" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
             <span>See the Pen <a href="https://codepen.io/miewlk/pen/gbYoPzY">
@@ -28,10 +30,10 @@
     </div>
 
     <div class="slide">
-        <p class="description">on uttilise la variable "animate" pour choisir son temps, 
-            sa duration et d'autre détails sur la progression de la séquence.
-            mais ça ne configure pas l'apparence de l'animation (on le fait avec @keyframes)
-        </p>
+      <div class="description">
+        <h2>p {animation-direction}</h2>
+
+      </div>
 
         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MYgrKxO" data-pen-title="exemple 2" data-user="miewlk" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
             <span>See the Pen <a href="https://codepen.io/miewlk/pen/MYgrKxO">
@@ -42,5 +44,98 @@
         </p>
         <script async src="https://public.codepenassets.com/embed/index.js"></script>
     </div>
+    
+    <div class="slide"> 
+      <div class="description">
+        <h2>animation-timing-function:</h2>
+        <p>Pour affiner la variation de la vitesse de l'élément lorsqu'il se déplace dans l'animation. Il existe quatre valeurs de fonction de synchronisation de base :
+          linéaire : vitesse uniforme sur toute l'animation.
+          facilité : lent au début, rapide au milieu et lent à la fin.
+          démarrage progressif : commence lentement puis accélère jusqu'à la fin.
+          Ease-out : démarre rapidement puis ralentit jusqu'à la fin. Si vous ne définissez aucune fonction de temporisation, la valeur par défaut est Ease.</p>
+        </div>
+      </div>
+
+<div class="slide"> 
+  <div class="description">
+    <h2>animation-iteration-count:</h2>
+        <ol>spécifie le nombre de fois que l'animation sera jouée. Les valeurs possibles sont :
+          <ul># - un nombre spécifique d'itérations (la valeur par défaut est 1)</ul>
+          <ul>infinite - l'animation se répète à l'infini</u>
+          <ul>initial- définit le nombre d'itérations à la valeur par défaut</ul>
+          <ul>inherit- hérite de la valeur du parent</ul>
+        </ol>
+        </p>
+      </div>
+      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jENYqMa" data-pen-title="Untitled" data-user="AnastasiiaZhuravlova" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/AnastasiiaZhuravlova/pen/jENYqMa">
+        Untitled</a> by Anastasiia (<a href="https://codepen.io/AnastasiiaZhuravlova">@AnastasiiaZhuravlova</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div>
+<div class="slide"> 
+  <div class="description">
+    <h2>animation-play-state:</h2>
+    <p>Spécifie si l'animation est en cours de lecture ou en pause. La reprise d'une animation en pause démarre l'animation là où elle a été interrompue. Les valeurs possibles sont :
+        <ol>
+          <ul>playing- L'animation est actuellement en cours</ul>
+          <ul>paused- L'animation est actuellement en pause</ul>
+        </ol>
+    </p>
+  </div>
+  <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="emOyZrb" data-pen-title="Untitled" data-user="AnastasiiaZhuravlova" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/AnastasiiaZhuravlova/pen/emOyZrb">
+    Untitled</a> by Anastasiia (<a href="https://codepen.io/AnastasiiaZhuravlova">@AnastasiiaZhuravlova</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div>
+
+<h1>II. Transformation</h1>
+
+  <div class="slide">
+    <div class="description">
+      <h2>p{transform}</h2>
+      <p>
+        La propriété CSS transform vous permet de 
+        faire pivoter(rotate), de mettre à l'échelle(scale), d'incliner(skew) 
+        ou de traduire un élément(translate). Elle modifie l'espace 
+        de coordonnées du modèle de formatage visuel CSS.
+      </p>
+    </div>
+    
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNbapma" data-pen-title="hover" data-user="miewlk" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/miewlk/pen/bNbapma">
+      hover</a> by miewlk (<a href="https://codepen.io/miewlk">@miewlk</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xbKpOKG" data-pen-title="scale" data-user="miewlk" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/miewlk/pen/xbKpOKG">
+      scale</a> by miewlk (<a href="https://codepen.io/miewlk">@miewlk</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wBwpWvm" data-pen-title="Untitled" data-user="miewlk" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/miewlk/pen/wBwpWvm">
+      Untitled</a> by miewlk (<a href="https://codepen.io/miewlk">@miewlk</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jENYrEQ" data-pen-title="Untitled" data-user="miewlk" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/miewlk/pen/jENYrEQ">
+      Untitled</a> by miewlk (<a href="https://codepen.io/miewlk">@miewlk</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+  </div>
+
+  
+  
   </body>
 </html

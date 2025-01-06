@@ -1,23 +1,50 @@
+@font-face {
+  font-family: modak;
+  src: url(Modak-Regular.ttf);
+}
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 100% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(34, 32, 32);
+  color: white;
 
-  background: rgb(238, 174, 202);
+  background: rgb(191, 76, 127);
   background: radial-gradient(
     circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
+    rgba(191, 76, 127, 1) 0%,
+    rgb(75, 154, 244) 100%
   );
 }
 
 h1 {
-  margin: 120px;
+  margin: 180px 120px 120px 120px;
   text-align: center;
   font-size: 58px;
 }
 
+h2 {
+  font-size: 40px;
+}
+
 div.slide {
   /* From https://css.glass */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+
   background: rgba(255, 255, 255, 0.28);
   border-radius: 16px;
   box-shadow: 0 4px 60px rgba(0, 0, 0, 0.1);
@@ -27,6 +54,18 @@ div.slide {
   margin: 60px 20px;
   padding: 60px;
   border-radius: 30px;
+
+  animation: 3s 1 normal slide-in;
+}
+
+div.description {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+div.description p {
+  max-width: 600px;
 }
 
 p.description {
