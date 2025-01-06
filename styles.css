@@ -1,0 +1,24 @@
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+p.exemple1 {
+  animation-duration: 3s;
+  animation-name: slide-in;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+
+  /* ou bien juste :
+
+  animation: 3s infinite alternate slide-in;
+
+   */
+}
