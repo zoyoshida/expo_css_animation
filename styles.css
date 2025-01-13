@@ -56,6 +56,8 @@ div.slide {
   border-radius: 30px;
 
   animation: 3s 1 normal slide-in;
+
+  min-height: 600px;
 }
 
 div.description {
